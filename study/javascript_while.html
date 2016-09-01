@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>欢迎你！</title>
+</head>
+<body>
+<script>
+  //函数输入给定参数对应的乘法表;
+   function multiple(number){
+   for(var i =1;i<=number;i++){
+	   var n =i*number;
+	   document.write("number*"+ i + "="+ n + "<br>");
+   }
+  }
+//函数调用
+//multiple(3)
+  var input = prompt("输入要输出的乘法表的数值")；
+  while(input != -1){
+	  while(isNaN(input)){
+		  alert("输入数值无效，请重新输入！");
+		  /*var result = prompt("输入要输出的乘法表的数值")；
+		  if(result != -1)*/
+		  break;
+		  }
+	  else{
+		  multiple(input);
+		  input = prompt("输入要输出的乘法表的数值")；
+	  }
+  }
+</script>
+</body>
+</html>
