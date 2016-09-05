@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Insert title here</title>
+<script>
+   function upload(){
+	   
+	   //1.通过id获取file控件内容
+	   var fileName = document.getElementById("wj").value;
+	   //2.从file的value中得到后缀
+	   var type = fileName.substring(fileName.lastIndexOf())
+	   //3.定义类型数组
+	   var type = ["bmp","jpg"];
+	   //4.判断后缀是否属于规定类型
+	   if(type.indexOf(type)==-1){
+		   alert("类型不匹配");
+	   }
+	   
+	   
+   }
+</script>
+</head>
+<body>
+<form method="post">
+ 图像 名称<input name="imgname"><br>
+ 上传:<input type="file" id="wj" name="file">
+<input type="submit" value="上传" onclick="return upload()">
+</form>
+</body>
+</html>
