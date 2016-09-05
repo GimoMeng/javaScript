@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+   var name = ["Tom",23,"Jemmy"];
+   document.write(name.length+"<br>");
+   name.push(20);
+   document.write(name.length+"<br>");
+   for(ele in name){
+	   document.write(name[ele]+"**");
+   }
+   var name2 = ["Dora",5];
+   var name3 = name.concat(name2);
+   //document.write(name3);
+   for(ele in name3){
+	   //document.write(name3[ele+"-"]);
+   }
+   //document.write("<br>");
+   //slice
+   //document.write(name3.slice(0,3));
+   //join
+   document.write(name3.join("<br>"));
+   //sort()
+   document.write(name3.sort());
+   
+</script>
+</body>
+</html>
