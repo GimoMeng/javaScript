@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type"content="text/html;charset=utf-8"/>
+<title></title>
+</head>
+<body>
+<script type="text/javascript">
+   var months=["一月","二月","三月","四月","5月","6月","7月","8月","9月","10月","11月","12月"];
+   var nowDate=new Date();
+    nowDate.setDate(nowDate.getMonth()+12);
+    document.write(nowDate.getDate()+"<br>");
+    document.write(months[nowDate.getMonth()]+"<br>");
+    document.write(nowDate.getFullYear()+"<br>");
+   </script>
+</body>
+</html>
